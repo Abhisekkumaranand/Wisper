@@ -1,6 +1,10 @@
 import axios from "axios";
 
-const BASE_URL = import.meta.env.MODE === "development" ? "https://wisper-hv4y.onrender.com/api" : "/api";
+const BASE_URL =
+  import.meta.env.MODE === "development"
+    ? "http://localhost:3000/api"
+    : "https://wisper-hv4y.onrender.com/api";
+
 
 export const axiosInstance = axios.create({
   baseURL: BASE_URL,
